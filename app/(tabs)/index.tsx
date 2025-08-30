@@ -19,7 +19,7 @@ import { process_input } from '../../utils/processInput';
 import { buildSegments, computeCensoredText } from '../../utils/textSegmentation';
 
 export default function App() {
-  const [input, setInput] = useState<string>('My name is Mike. I stay at Block 110.');
+  const [input, setInput] = useState<string>('My name is Jerry Lim, NRIC S1234567A, phone 91234567, postal 123456, address Block 123 Clementi Ave 3 #05-77');
   const [loading, setLoading] = useState(false);
   const [segments, setSegments] = useState<Segment[] | null>(null);
   const [censoredMap, setCensoredMap] = useState<Record<string, boolean>>({});
